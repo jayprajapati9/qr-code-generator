@@ -1,0 +1,23 @@
+{
+  "name": "Make QR Code",
+  "version": "1.0",
+  "description": "Generate Qr code easily and download.",
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "page": "bg.html",
+    "peristent": "true"
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "Icon/qricon.png"
+    }
+  },
+  "icons": {
+    "16": "Icon/qricon.png",
+    "32": "Icon/qricon.png",
+    "48": "Icon/qricon.png",
+    "128": "Icon/qricon.png"
+  },
+  "manifest_version": 2
+}

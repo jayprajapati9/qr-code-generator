@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+        }
+
+
+        .UrlInput {
+            padding: 10px 12px;
+            margin: 8px 0;
+            border: 1px solid #2AA4F4;
+            border-radius: 4px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .DownloadBtn {
+            margin-top: 12px;
+            margin-left: 5px;
+            background-color: #2AA4F4;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            border: 1px solid #2AA4F4;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .DownloadBtn:hover {
+            transition: all 0.2s ease-in-out;
+            opacity: 0.8;
+        }
+
+        .Brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .Brand h2 {
+            font-weight: normal;
+        }
+
+        .Brand img {
+            margin-right: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Brand">
+        <img src="Icon/qricon.png" alt="Brand" width="30" height="30">
+        <h2>Generate QR Code</h2>
+    </div>
+    <input type="text" id="UrlInput" placeholder="Enter Link" class="UrlInput">
+    <img src="" alt="" id="QrImg">
+    <a id="DownloadBtn" class="DownloadBtn" href="">Download</a>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
